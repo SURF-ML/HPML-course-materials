@@ -1,13 +1,11 @@
 # HPML-course-materials
 Contains all course materials from the HPML group
-Course environment: https://ondemand.snellius.surf.nl
-- Login with scurXXX login
+Course environment: https://coursemgr.advisorssrcdemo.src.surf-hosted.nl/ 
+- Login
 - Click on "Jupyter"
-- Select "partition" -> gpu_course
-- "Select environment module version" -> Course
-- Memory: 16 (GB)
+- Memory: 4 GB
 - CPU cores: 2
-- GPUs: 1
+- Partition: GPU, shared
 - time: e.g. 1:30:00 (1h30m)
 
 
@@ -19,11 +17,11 @@ Course environment: https://ondemand.snellius.surf.nl
 
 ## Profiling
 ```bash
+git clone --depth=1 https://github.com/SURF-ML/HPML-course-materials.git
 python3 -m venv venv
 source venv/bin/activate
-pip install git+https://github.com/pytorch/kineto.git#subdirectory=tb_plugin
+pip install -r HPML-course-materials/requirements.txt
 
-git clone --depth=1 https://github.com/SURF-ML/HPML-course-materials.git
 
 tensorboard --logdir HPML-course-materials/Day2/notebooks/logs/
 ```

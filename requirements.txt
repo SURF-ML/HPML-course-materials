@@ -18,5 +18,4 @@ accelerate
 numexpr
 bottleneck
 
-git+https://github.com/pytorch/kineto#subdirectory=tb_plugin
-
+torch_tb_profiler
